@@ -1,0 +1,41 @@
+They are some built functions that commonly used : print(), len(), str(), list(), tuple(), dir(), dict(), int(), float(), min(), max(), sum(), type(), sorted(), open(), file(), help(), and input().
+Output and Input:----
+print(): Displays text or variables to the screen.
+input(): Prompts the user for text input from the keyboard.
+
+Data Inspection:----
+type(): Returns the data type of an object.
+dir(): Lists all properties and methods of an object.
+help(): Invokes the built-in help system for documentation.
+
+Type Conversion (Casting):----
+str(): Converts a value into a string data type.
+int(): Converts a value into an integer whole number.
+float(): Converts a value into a decimal number.
+list(): Converts an iterable collection into a mutable list.
+tuple(): Converts an iterable collection into an immutable tuple.
+dict(): Creates a dictionary collection of key-value pairs.
+
+Math and Collections:----
+len(): Returns the number of items in a collection.
+sum(): Adds up all numerical items in a collection.
+min(): Finds the smallest value in a collection.
+max(): Finds the largest value in a collection.
+sorted(): Returns a new sorted list from a collection.
+
+File Handling:----
+open(): Opens a file for reading, writing, or appending.
+file(): Obsolete function from Python 2; no longer exists.
+
+
+print('Hello, World!')
+len('Hello, World!')
+type('Hello, World!')
+int(10)
+float(4)
+input('Enter your Name:')
+min(10,20,30,40)
+max(10,30,40,50,60)
+sum([10,30,50,40,60])
+dir(str)
+help('keyword')
