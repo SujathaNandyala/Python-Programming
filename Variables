@@ -1,0 +1,14 @@
+Variables is used to store data and assign the values. 
+code:
+s=5
+name="sujatha"
+print(s)
+print(name)
+Output:- 
+5
+sujatha
+Rules to follow for the Naming the variables . They are 4
+  1.name contain  a-z, A-Z, _, digit
+  2.never with digit
+  3.don't use keywords
+  4.case-sensitives(nandyalaSujatha, nandyalasujatha, NandyalaSujatha, NANDYALASUJATHA)
