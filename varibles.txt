@@ -1,0 +1,35 @@
+1.Basic Assignment: Variables are assigned values using the = operator.
+x = 7
+y = 17.5
+z = "Sujatha"
+
+2. Dynamic Typing: It is dynamically typed, so the same variable can be stored different data types during execution.
+x = 10
+x = "Variables can be store data and assign the values using a = operator"
+
+3. Assigning Same Value: same value can be assigned to multiple variables in a single line.
+a = b = c = 17
+print(a, b, c) 
+Output:--
+17 17 17
+
+4. Assigning Different Values: Multiple variables can also be assigned different values in a single line.
+x, y, z = 7, 17.5, "Sujatha"
+print(x, y, z) 
+Output:-
+7 17.5 Sujatha
+
+Example:- 
+
+-->X=17
+-->Y=X
+-->  Y--->17<---X
+-->  X="Python"
+-->  Y--->17
+          Python<---X
+-->Y="Computer"
+        ---------
+        |   5    | --->garbage
+        ----------
+    X--->Python
+        Computer<---Y
