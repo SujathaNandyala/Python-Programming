@@ -1,0 +1,104 @@
+Data Types:-The type of value a variable can store.
+It can be divided based oon categories:---
+1.Numeric: int(stores the whole numbers can be postive negative or zero(eg:-5)), float(decimal number(eg:-17.7, 7.0), complex(mixed with letter (eg:- 2+3j, 5+7j)
+2.Sequence: str("Sujatha"), list([7,17,18]-->it should be ordered and mutubalemeans after creation also we can modified intial state), 
+tuple((2,3,4,5)--> it is ordered and immutable means cannot be modified once they are created), range(sequence of numbers(eg:-ragne(5))
+3.Set: set(unordered collection of unique items{1,2,3,4,5}, frozenset(Immutable set({1,2,3,4,5.6})
+4.Mapping: dict(key-value pairs eg:-{"name":"Sujatha", "age":20}
+5.Binary: bytes(Immutable binary data(b"Sujatha") , bytearray(mutable binary data (bytearray(17))
+6.Boolean: bool(True(0) or False(1)
+7.None: NoneType(represent no value)
+
+ASCII VALUE FOR A IS 65
+Program:--
+a=1
+b=7.0
+c='Sujatha'
+d=False
+e=(1,2,3)
+f=[1,2,3]
+g=([1,2,3])
+h={1,2,3,4,5}
+i=({12,13,14,15})
+j=2+7j
+k={"name":"Sujatha", "age":20}
+l=(range(9))
+m=(bytearray(6))
+n=(bytes(6))
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+print(type(h))
+print(type(i))
+print(type(j))
+print(type(k))
+print(type(l))
+print(type(m))
+print(type(n))
+
+Output:--
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'bool'>
+<class 'tuple'>
+<class 'list'>
+<class 'list'>
+<class 'set'>
+<class 'set'>
+<class 'complex'>
+<class 'dict'>
+<class 'range'>
+<class 'bytearray'>
+<class 'bytes'>
+
+default values are:-- 
+a = 0
+b = 0.0
+c = 0j
+d = ""
+e = []
+f = ()
+g = range(0)
+h = set()
+i = frozenset()
+j = {}
+k = b""
+l = bytearray()
+m = False
+n = None
+
+print(type(a), a)
+print(type(b), b)
+print(type(c), c)
+print(type(d), d)
+print(type(e), e)
+print(type(f), f)
+print(type(g), list(g))   # Convert range to list for display
+print(type(h), h)
+print(type(i), i)
+print(type(j), j)
+print(type(k), k)
+print(type(l), l)
+print(type(m), m)
+print(type(n), n)
+
+Output:-
+<class 'int'> 0
+<class 'float'> 0.0
+<class 'complex'> 0j
+<class 'str'> 
+<class 'list'> []
+<class 'tuple'> ()
+<class 'range'> []
+<class 'set'> set()
+<class 'frozenset'> frozenset()
+<class 'dict'> {}
+<class 'bytes'> b''
+<class 'bytearray'> bytearray(b'')
+<class 'bool'> False
+<class 'NoneType'> None
