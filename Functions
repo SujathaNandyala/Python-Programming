@@ -1,0 +1,256 @@
+Functions:-
+A function is a block of code that performs a specific task. Instead of writing the same code many times, 
+you can write it once and call it whenever needed.
+
+Syntax:-
+def functionName(Parameters):
+       Body
+return expression
+
+Eg:-
+Code:
+  def printHello():
+      print("Hello")
+  printHello()
+Output:Hello
+
+Types of Parameters:
+
+1.Default Arguments: no value is given 
+Eg:-
+Code:
+def suzz(x,z,y=20):
+    print(x,y,z)
+suzz(10,11,12)
+suzz(15,20)
+suzz(15,25)
+Output:
+10 11 12
+15 20 20
+15 25 20
+
+2.Keyword Parameter:-You can specify parameter names
+Eg:-
+Code:
+def fun(name, age):
+    print(name,age)
+fun(name="Sujatha", age="21")
+fun(age='21', name="Sujatha")
+Output:
+Sujatha 21
+Sujatha 21
+
+3.Postional Arguments:-specifies postion
+Eg:-
+Code:
+def fun(fname,lname):
+    print(fname,lname)
+fun("Nandyala", "Sujatha")
+fun("Sujatha", "Nandyala")
+Output:
+Nandyala Sujatha
+Sujatha Nandyala
+
+4.Arbitary Arguments:-
+Eg:-
+Code:
+def fun(*args, **kwargs):
+    print(args)
+    print(kwargs)
+fun("Nandyala", "Sujatha", fname="Nandyala", lname="Sujatha")
+Output:
+('Nandyala', 'Sujatha')
+{'fname': 'Nandyala', 'lname': 'Sujatha'}
+
+Function Without Parameters:
+def welcome():
+  print("welcome!")
+welcome()
+Output: welcome!
+
+Function with Multiple Parameters:
+Code:
+def fun(a,b):
+      c=a+b
+      print(c)
+fun(10,15)
+fun(20,30)
+fun(100,200)
+Output:
+25
+50
+300
+
+Pass by Value:
+Code:
+def fun(x):
+  x=10
+x=20
+fun(x)
+print(x)
+Output: 10
+
+Pass by Refernce:
+Code:
+def fun(x):
+  x[1]=20
+x=[1,2,3]
+fun(x)
+print(x)
+Output: [1, 20, 3]
+
+Functions within functions:
+Code:
+def fun1():
+    def fun2():
+        print("This is fun1")
+    print("This is fun2")
+    fun2()
+    print("Hi")
+fun1()
+print("Bye")
+Output:
+This is fun2
+This is fun1
+Hi
+Bye
+
+Function with return value:
+code:
+def sub(a, b):
+    return a - b, a + b
+result = sub(5, 7)
+print(result)
+Output:
+-2
+
+Function with Multiple return value:
+Code:
+def returnMultipleValues(a, b):
+    return a - b, a + b, a * b, a / b
+sum, sub, mul, div = returnMultipleValues(20,10)
+print(sum)
+print(sub)
+print(mul)
+print(div)
+Output:
+30
+10
+200
+2
+
+GLOBAL VS LOCAL VARIABLE:
+1.def fun():
+   a=10
+   print(a)
+fun()
+Output: 10
+
+2. a=5
+def fun():
+  print(a)
+fun()
+print(a)
+Output:
+5
+5
+
+3.def fun():
+  a=5
+  print(a)
+fun()
+print(a)
+Output:
+5
+name 'a' is not defined
+
+4.a=5
+def fun():
+a=a+1
+print(a)
+fun()
+Output: UnboundLocalError
+5.a=5
+def fun():
+  global a
+    a=a+1
+  print(a)
+print(a)
+fun()
+print(a)
+Output:
+5
+6
+6
+
+Function without Parameters but with Return
+Code:
+def message():
+    return "Welcome"
+print(message())
+Output: Welcome
+
+Recursive Function:-A function calling itself.
+Code:
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+print(factorial(5))
+Output: 120
+
+Variable-Length Arguments (*args):-Used when you don't know how many values will be passed.
+Code:
+def numbers(*num):
+    print(num)
+numbers(1, 2, 3, 4)
+Output: (1, 2, 3, 4)
+
+Example:
+Code:
+def total(*num):
+    print(sum(num))
+total(10, 20, 30)
+Output: 60
+
+Built-in Functions:-Python already provides many useful functions.
+Code:
+print(len("Python"))
+print(max(10, 20, 30))
+print(min(10, 20, 30))
+print(sum([10,20,30]))
+Output:
+6
+30
+10
+60
+
+Problems:---
+1.ADD TWO NUMBERS
+def add(a,b):
+    print(a + b)
+add()
+
+2.FIND SQUARES
+def square(n):
+ return n*n
+print(square(2))
+
+3.CHECK EVEN OR ODD
+def evenOdd(n):
+  if(n%2==0):
+    print("even")
+  else:
+    print("odd")
+evenOdd(2)
+Output:even
+
+4.FIND LARGEST NUMBER
+def largestNum(a,b):
+    if a > b:
+        return a
+    else:
+        return b
+print(largestNum(10,20))
+Output:20
+
