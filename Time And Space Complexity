@@ -1,0 +1,46 @@
+Time Complexity:-
+Time Complexity describes how much time an algorithm takes to run as the input size increases.
+It is represented using Big O notation.
+
+
+Space Complexity:-
+Space Complexity describes how much extra memory an algorithm uses while running.
+It includes:
+  Variables
+  Data structures
+  Extra storage
+
+Eg:-
+
+  for i in range(0,6,1):  ---->m+1
+      print("Hi")
+  for i in range(0,11,1):  ----->n+1
+      print("Hi")
+
+  Time complexity = O(n+m) = O(5+10) =O(11) = O(n) 
+ Space Complexity=O(1)
+
+
+Eg:- 
+for j in range(0,6,1):
+    for i in range(0,6,1):
+        print("Hi")
+
+T.C = O(n*n) = O(n^2)= O(5*%) = O(25)
+S.C = O(1)
+
+Eg:-
+for(1->n){
+    for(1->n){       ---->O(n²)
+    }
+}
+for(1->n){
+    for(1->n){     ------->O(n²)
+    }
+}
+for(1->n){      ----->O(n)
+}
+
+T.C= O(n²+n²+n) = O(2n²+n) = O(2n²)= O(n²)   #2 is constant ans we have to prefer highest degree for the worst case and n should used for good case
+ 
+Any Program we have to find time complexity for Worst case only
