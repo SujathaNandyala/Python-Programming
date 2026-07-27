@@ -1,0 +1,36 @@
+Revers Of an Array:-
+
+# in case of odd length of list
+l=[1,2,3,4,5]
+n=len(l)
+a=[]
+for i in range(n-1, -1, -1): # l to a
+    a.append(l[i])
+l=[]
+for i in range(0,n,1): # a to l
+    l.append(a[i])
+print(l) 
+Output:
+[5,4,3,2,1]
+
+Time Complexity: O(n+n) = O(2n) = O(n)
+Space Complexity:O(1)
+
+
+#in case of even length of list
+l=[1,2,3,4,5,6]
+n=len(l)
+start=0
+end=n-1
+while start<end:
+        temp=l[start]
+        l[start]=l[end]
+        l[end]=temp
+        start=start+1
+        end=end-1
+print(l)
+Output:-[6,5,4,3,2,1]
+
+Time Complexity:O(n/2) = O(1/2 n) = O(n)
+Space Complexity:O(1)
+    
